@@ -14,24 +14,155 @@
     <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
 <style type="text/css">
- body {
+body {
     background-color: #b9aca3;
     font-family: 'Bitter', serif;
-  }
-  .image_here{
-    margin-left: -30px;
-  }
-
-  .white {
+}
+.image_here{ 
+  margin-left:30px;
+  position: relative; 
+} 
+.im{
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  text-align: right;
+  font-size: 4em;
+}
+.white {
     background-color: white;
-    margin-left: -30px;
+    margin-left: 0px;
     padding-top:  50px;
-  }
-  #light_brown{
+}
+#light_brown{
     background-color: #e2dedc;
+    margin-left: 0px;
+} 
+#example1 { 
+  border: 1px solid #e2e2e2;
+}
+.item { 
+  color: #bebebe;
+  border: 5px solid white;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.white_background{
+background-color: white;
+color:black;
+}
+
+@media (min-width: 979px) and (max-width: 1200px) {
+	#navbar-top .container {
+	       width:960px;
+	} 
+	    
+	.image_here{ 
+	  margin-left:20px;   
+	  position: relative;  
+	}
+	.im{
+	  position: absolute;
+	  bottom: 200px;
+	  top:200px;
+	  right: 700px;
+	  text-align: left;
+	  font-size: 2em;
+	}
+	  
+	.smallerText{
+	  position: absolute;
+	  bottom: 40px;
+	  top:0px;
+	  left: 800px;
+	  text-align: left;
+	  font-size: .1em; 
+	}  
+}
+@media (min-width: 768px) and (max-width: 979px) {
+
+.nav-collapse {
+	left:25%;
+}
+#menu{
+margin-left: 50%;
+margin-right: 1%
+}
+#menu li:hover{
+margin-right: 40%;
+}
 
 
+  .image_here{ 
+  margin-left:20px;   
+    position: relative;  
   }
+.im{
+  position: absolute;
+  bottom: 40px;
+  margin-left: 100px;
+  top:0px;
+  left: 800px;
+  text-align: right;
+  font-size: 1em;
+  }
+  
+  .smallerText{
+    position: absolute;
+  bottom: 40px;
+  top:0px;
+  left: 800px;
+  text-align: right;
+  font-size: 1em;  
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+
+.nav-collapse {
+right:10%;
+  
+}
+
+#menu{
+margin-left: 50%;
+margin-right: 1%
+}
+
+#menu li:hover{
+margin-left: 5%;
+margin-right: 0%;
+}
+
+  .image_here{  
+  margin-left: 0px;  
+    position: relative;
+ 
+  }
+}
+
+@media (max-width: 480px){
+.nav-collapse {
+left:-10%;  
+}
+#menu{
+margin-left: 20%;
+margin-right: 10%
+}
+
+#menu li:hover{
+margin-right: -5%;
+}
+
+
+
+
+  .image_here{ 
+  margin-left:0px;   
+    position: relative;  
+  }
+}
+
 
 
   .circle_wrap img{
@@ -73,23 +204,7 @@
 
 
   }
-
- .box{
-  display: inline;
-
-
-  vertical-align: bottom;
-  margin-bottom: 80px;  
-}
-
- .text_box {
-  width: 400px;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 80px; 
-  background-color:#a7e5a8;
-}
-    .Wrap_subtitle{
+  .Wrap_subtitle{
     font-family: 'Source Sans Pro', serif;
     margin-top: -5px;
     font-size: 14px;
@@ -98,113 +213,7 @@
     text-align: center;
     text-indent: 0px;
     text-transform: uppercase;
-
-
-
   }
-
-.flex-container {
-  display: -moz-inline;
-  display: -webkit-inline;
-  display: inline;
-  -moz-box-orient: horizontal;
-  -webkit-box-orient: horizontal;
-  box-orient: horizontal;
-  
-  margin-bottom: 20px;
-}
-
-.flex-container div img{
-  height:20%;
-  width: 20%;
- 
-  outline: 5px solid white;
-
-}
-
-.flex-container-2 div img{
-  height: 40%;
-  width:  40%;
- 
-  outline: 5px solid white;
-
-}
-
-.col-1 {
-  color: black;
-  background: white;
-}
-
-.col-3 {
-  color: black;
-  background: white;
-}
-
-
-.col-1-flex {
-  -moz-box-flex: 1;
-  -webkit-box-flex: 1;
-  box-flex: 1;
-}
-
-.col-2-flex {
-  -moz-box-flex: 1;
-  -webkit-box-flex: 1;
-  box-flex: 1;
-}
-
-.col-3-flex {
-  -moz-box-flex: 2;
-  -webkit-box-flex: 2;
-  box-flex: 2;
-  
-}
-
-
-
-
-.flex-container-reverse {
-  width: 100%;
-  display: -moz-box;
-  display: -webkit-box;
-  display: box;
-  -moz-box-orient: horizontal;
-  -webkit-box-orient: horizontal;
-  box-orient: horizontal;
-  -moz-box-direction: reverse;
-  -webkit-box-direction: reverse;
-  box-direction: reverse;
-  outline: 1px solid #f00;
-  margin-bottom: 20px;
-}
-
-.col-1-ordinal {
-  -moz-box-ordinal-group: 2;
-  -webkit-box-ordinal-group: 2;
-  box-ordinal-group: 2;
-}
-
-.col-2-ordinal {
-  -moz-box-ordinal-group: 3;
-  -webkit-box-ordinal-group: 3;
-  box-ordinal-group: 3;
-}
-
-.col-3-ordinal {
-  -moz-box-ordinal-group: 1;
-  -webkit-box-ordinal-group: 1;
-  box-ordinal-group: 1;
-}
-
-
-
-
-
-
-
-
-
-
 
 </style>
 
@@ -245,18 +254,18 @@
  <div class="container">
     <!-- Menu bar-->
     
-    <div class="navbar navbar-inverse" id="navigation_bar">
-      <div class="navbar-inner">
-        
+    <div class="navbar navbar-inverse" >
+      <div class="navbar-inner" id="navbar-top">
+       <div class="offset1"><a class="brand" href="#"><img src = "img/tatchit_logo.png"></a></div>
         <div class="container" id = "menu">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#"><img src = "img/tatchit_logo.png"></a>
+         
           
-          <div class="nav-collapse collapse">
+          <div class="nav-collapse collapse offset1">
             <ul class="nav">
         
               <li><a href="#what-is-tatchit">WHAT IS TATCHIT?</a></li>
@@ -275,14 +284,16 @@
 
 
       <!-- Example row of columns -->
-
+<div class = "row">
          <div class ="image_here"> 
            <img src="img/Boxes/Production-image-cyan.png" alt=""/>
             <div class= "im" >
-                <span style="font-size:20px; font-family:'Bitter'; font-weight:none; ">WHAT WE DO</span> <br>
-                <span style=" font-family:'Source Sans Pro'; font-weight:bolder; ">CONNECT WITH US</span>
+                <div class="smallerText"><span style="font-family:'Bitter'; font-weight:none; ">WHAT WE DO</span> <br>
+                <span style=" font-family:'Source Sans Pro'; font-weight:bolder; ">CONNECT WITH US</span></div>
             </div> <!-- im -->
           </div><!-- image -->
+          
+</div>
 
       
 <div class = "row white">
@@ -328,80 +339,82 @@
 <div class="row" id="light_brown">
   <div class= "span9 offset2">
 
-        <div class="flex-container">
-          <div class="box"><img alt="Agra picture" src="img/photos-images/Agra-1.JPG"></div>
-          <div class="box"><img alt="Agra picture" src="img/photos-images/Agra-1.JPG"></div>
-          <div class="text_box">I am column 3</div>
+        <div id ="example1">
+
         
   
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-1.JPG">
+		                <div class="item">
+		                   <img alt="Agra picture" src="img/photos-images/Agra-1.JPG">
+		                </div>
+		                <div class="item">
+		                  <img alt="Agra picture" src="img/photos-images/Agra-3.JPG"> 
+		               </div>
+		                <div class="item white_background">
+		                   This place is built on a foundation of rock-star producers and artists:<br> a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry.
+		                </div>
+		                <div class="item">
+		                   <img alt="Agra picture" src="img/photos-images/Agra-18.JPG">
+		                </div>
+		                
+		         
+		                
+		    
+		
+		                <div class="item">
+		                   <img alt="Agra picture" src="img/photos-images/Agra-2.JPG">
+		                </div>
+		                
+		                  <div class="item">
+		                    <img alt="Agra picture" src="img/photos-images/Agra-2.JPG">
+		                </div>
+		                <div class="item">
+		                    <img alt="Agra picture" src="img/photos-images/Agra-1.JPG">
+		                </div>
+		                
+        
+               
+     
+		                <div class="item">
+		                    <img alt="Agra picture" src="img/photos-images/Agra-3.JPG">
+		                </div>
+		
+		                <div class="item white_background">
+		                   This place is built on a foundation of rock-star producers and artists:<br> a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry.
+		                </div>
+		
+		
+		               
+		                  <div class="item">
+		                    <img alt="Agra picture" src="img/photos-images/Agra-4.JPG">
+		                </div>
+		          
+		                <div class="item">
+		                    <img alt="Agra picture" src="img/photos-images/Agra-5.JPG">
+		                </div>
+		                <div class="item">
+		                    <img alt="Agra picture" src="img/photos-images/Agra-6.JPG">
+		                </div>
+		                <div class="item">
+		                    <img alt="Agra picture" src="img/photos-images/Agra-7.JPG">
+		                </div>
+		                <div class="item">
+		                    <img alt="Agra picture" src="img/photos-images/Agra-8.JPG">
+		                </div>
+		                <div class="item">
+		                    <img alt="Agra picture" src="img/photos-images/Agra-9.JPG">
+		                </div>
                 </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-2.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-3.JPG">
-                </div>
+                
+ 
 
-                <div class="text_box">
-                   This place is built on a foundation of rock-star producers and artists:<br> a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry.
-                </div>
 
-
-                <div class="flex-container-2">
-                  <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-4.JPG">
-                </div>
-              </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-5.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-6.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-7.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-8.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-9.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-10.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-11.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-12.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-13.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-14.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-15.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-16.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-17.JPG">
-                </div>
-                <div class="box">
-                    <img alt="Agra picture" src="img/photos-images/Agra-18.JPG">
-                </div>
-
-              </div>
-
-
+         
               </div>
  </div>
+ 
+
+        
+  
 
 
 
@@ -421,17 +434,6 @@
 -->
 
 
-  
- 
-
-
- 
-
-   
-
-
-
-
 
      <!-- End of row 1-->
 
@@ -448,7 +450,7 @@
                     <ul class="nav">
                       <li><a href="#got_any_questions"><span style = "color:white">GOT ANY QUESTIONS? </span></a></li>
                       <li><a href="#ask_us_here">ASK US HERE <i class="icon-arrow-right icon-white"></i></a></li>
-                       <div class="span1 offset4" id="social_media_icons">
+                       <div class="span1 offset3" id="social_media_icons">
                           <li><a><img src="img/glyphicons_391_twitter_t.png" 
                                       onmouseover = "this.src= 'img/glyphicons_391_twitter_t_Inv.png'" 
                                       onmouseout  = "this.src= 'img/glyphicons_391_twitter_t.png'">
@@ -476,6 +478,28 @@
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/bootstrap.customize.js"></script>
+    <script src="js/jquery.grid-a-licious.min.js"></script>
+    <script src="js/jquery.freetile.min.js"></script>
+    
+    <script type="text/javascript">
+
+
+            $(document).ready(function () {
+
+
+
+
+                // example1
+                $("#example1").freetile({
+                	
+                });
+
+
+                
+
+
+            });
+        </script>
 
 
   </body>
