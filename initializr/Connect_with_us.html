@@ -52,6 +52,213 @@ background-color: white;
 color:black;
 }
 
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+#content{
+background-color: #e2dedc;
+}
+
+.sites img{
+margin-right: -4px;
+margin-bottom: 3px;
+border: 3px solid white;
+}
+
+
+.element {
+  width: 110px;
+
+  margin: 3px;
+  float: left;
+  overflow: hidden;
+  
+  position: relative;
+  background: white;
+  color: black;
+  -webkit-border-top-right-radius: .2em;
+      -moz-border-radius-topright: .2em;
+          border-top-right-radius: .2em;
+}
+
+.element * {
+  position: absolute;
+  margin: 0;
+}
+
+.element .symbol {
+  left: 0.2em;
+  top: 0.4em;
+  font-size: 3.8em;
+  line-height: 1.0em;
+  color: #FFF;
+}
+.element.large .symbol {
+  font-size: 4.5em;
+}
+
+.element.fake .symbol {
+  color: #000;
+}
+
+.element img {
+  left: 0.8em;
+  top: 0.8em;
+  
+}
+
+.element .weight {
+  font-size: 0.9em;
+  left: 0.5em;
+  bottom: 0.5em;
+}
+
+.element .number {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: hsla(0,0%,0%,.5);
+  right: 0.5em;
+  top: 0.5em;
+}
+
+
+
+
+.variable-sizes .element.width3 { width: 30%; }
+
+.variable-sizes .element.height3 { height:330px; }
+
+.variable-sizes .element.width3.height3 {
+  font-size: 3.0em;
+}
+
+
+.variable-sizes .element.width4 { width: 40%; }
+
+.variable-sizes .element.height4 { height: 400px; }
+
+.variable-sizes .element.width4.height4 {
+  font-size: 4.0em;
+}
+
+.variable-sizes .element.width5 { width: 50%; }
+
+.variable-sizes .sites.width5 img{ width: 50%; }
+.variable-sizes .sites.width2 { width: 50%; }
+
+.variable-sizes .element.height5 { height: 500px; }
+
+.variable-sizes .element.width5.height5 {
+  font-size: 5.0em;
+}
+
+.variable-sizes .element.width2 { width: 20%; }
+
+.variable-sizes .element.height2 { height: 230px; }
+
+.variable-sizes .element.width2.height2 {
+  font-size: 2.0em;
+}
+
+.element.large,
+.variable-sizes .element.large,
+.variable-sizes .element.large.width2.height2 {
+  font-size: 3.0em;
+  width: 350px;
+  height: 350px;
+  z-index: 100;
+}
+
+/**** Horizontal ****/
+
+.horizontal #container {
+  height: 80%;
+}
+
+#copy {
+  max-width: 640px;
+}
+
+
+
+
+
+/**** Sites using Isotope ****/
+
+#sites h2 {
+  display: none;
+  padding: 0.4em;
+  line-height: 32px;
+  margin-bottom: 0.4em;
+  -webkit-transition: background-color 0.8s;
+     -moz-transition: background-color 0.8s;
+       -o-transition: background-color 0.8s;
+          transition: background-color 0.8s;
+}
+
+#sites h2 img {
+  display: inline-block;
+  margin-right: 0.4em;
+  vertical-align: bottom;
+}
+
+#sites h2.loading {
+  background: white;
+  color: #222;
+}
+#sites h2.error {
+  background: red;
+  color: #222;
+}
+
+
+#sites ul {
+  margin: 0;
+}
+
+
+
+
+
+
+
 @media (min-width: 979px) and (max-width: 1200px) {
 	#navbar-top .container {
 	       width:960px;
@@ -339,20 +546,27 @@ margin-right: -5%;
 <div class="row" id="light_brown">
   <div class= "span9 offset2">
 
-        <div id ="example1">
+         <section id="content">
+    
 
-        
   
-		                <div class="item">
+  
+  <div id="container" class="super-list variable-sizes clearfix">
+    
+      
+          
+    		                <div class="sites">
 		                   <img alt="Agra picture" src="img/photos-images/Agra-1.JPG">
 		                </div>
-		                <div class="item">
+		            	 <div class="element width4">
+		            	 <img alt="brand" src="img/tatchit_logo_grey.png"><br>
+		                   <p class="number">26This place is built on a foundation of rock-star producers and artists:<br> a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry.</p>
+		                </div>
+		                <div class="sites">
 		                  <img alt="Agra picture" src="img/photos-images/Agra-3.JPG"> 
 		               </div>
-		                <div class="item white_background">
-		                   This place is built on a foundation of rock-star producers and artists:<br> a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry.
-		                </div>
-		                <div class="item">
+
+		                <div class="sites">
 		                   <img alt="Agra picture" src="img/photos-images/Agra-18.JPG">
 		                </div>
 		                
@@ -360,51 +574,70 @@ margin-right: -5%;
 		                
 		    
 		
-		                <div class="item">
+		                <div class="sites">
 		                   <img alt="Agra picture" src="img/photos-images/Agra-2.JPG">
 		                </div>
 		                
-		                  <div class="item">
+		                  <div class="sites">
 		                    <img alt="Agra picture" src="img/photos-images/Agra-2.JPG">
 		                </div>
-		                <div class="item">
+		                <div class="sites">
 		                    <img alt="Agra picture" src="img/photos-images/Agra-1.JPG">
 		                </div>
 		                
         
                
      
-		                <div class="item">
+		                <div class="sites">
 		                    <img alt="Agra picture" src="img/photos-images/Agra-3.JPG">
 		                </div>
 		
-		                <div class="item white_background">
-		                   This place is built on a foundation of rock-star producers and artists:<br> a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry.
+		                <div class="element width2 height4">
+		                <img alt="brand" src="img/tatchit_logo_grey.png">
+		                   <p class="weight">10.811This place is built on a foundation of rock-star producers and artists:<br> a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry.</p>
 		                </div>
 		
 		
 		               
-		                  <div class="item">
+		                  <div class="sites">
 		                    <img alt="Agra picture" src="img/photos-images/Agra-4.JPG">
 		                </div>
 		          
-		                <div class="item">
+		                <div class="sites">
 		                    <img alt="Agra picture" src="img/photos-images/Agra-5.JPG">
 		                </div>
-		                <div class="item">
+		                <div class="sites">
 		                    <img alt="Agra picture" src="img/photos-images/Agra-6.JPG">
 		                </div>
-		                <div class="item">
+		                <div class="sites">
 		                    <img alt="Agra picture" src="img/photos-images/Agra-7.JPG">
 		                </div>
-		                <div class="item">
+		                <div class="sites">
 		                    <img alt="Agra picture" src="img/photos-images/Agra-8.JPG">
 		                </div>
-		                <div class="item">
+		                <div class="sites">
 		                    <img alt="Agra picture" src="img/photos-images/Agra-9.JPG">
 		                </div>
-                </div>
-                
+    
+    
+    
+    
+    
+
+    
+      
+          
+  
+    
+      
+  </div>
+
+  
+  
+
+
+    
+  </section> <!-- #content -->                
  
 
 
@@ -479,28 +712,25 @@ margin-right: -5%;
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/bootstrap.customize.js"></script>
     <script src="js/jquery.grid-a-licious.min.js"></script>
-    <script src="js/jquery.freetile.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+  <script>
+    $(function(){
     
-    <script type="text/javascript">
+      var $container = $('#container');
+    
+      $container.isotope({
+        masonry: {
+          columnWidth: 10
+        }
+         });
 
 
-            $(document).ready(function () {
 
-
-
-
-                // example1
-                $("#example1").freetile({
-                	
-                });
-
-
-                
-
-
-            });
-        </script>
-
+    
+         
+    
+    });
+  </script>
 
   </body>
 </html>

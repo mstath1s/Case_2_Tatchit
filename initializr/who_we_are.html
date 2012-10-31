@@ -19,60 +19,169 @@
     font-family: 'Bitter', serif;
   }
   .image_here{
-    margin-left: -30px;
+    margin-left: 30px;
   }
 
   .white {
     background-color: white;
-    margin-left: -30px;
+    margin-left: 0px;
   }
   #light_brown{
     background-color: #e2dedc;
-
+    margin-left: 0px;
 
   }
+  
+  
+@media (min-width: 979px) and (max-width: 1200px) {
+	#navbar-top .container {
+	       width:960px;
+	} 
+	    
+	.image_here{ 
+	  margin-left:20px;   
+	  position: relative;  
+	}
+	
+	#menu{
+margin-left: 20%;
+margin-right: 1%
+}
+	.im{
+	  position: absolute;
+	  bottom: 200px;
+	  top:200px;
+	  right: 700px;
+	  text-align: left;
+	  font-size: 2em;
+	}
+	  
+	.smallerText{
+	  position: absolute;
+	  bottom: 40px;
+	  top:0px;
+	  left: 800px;
+	  text-align: left;
+	  font-size: .1em; 
+	}  
+}
+@media (min-width: 768px) and (max-width: 979px) {
+
+.nav-collapse {
+	left:25%;
+}
+#menu{
+margin-left: 50%;
+margin-right: 1%
+}
+#menu li:hover{
+margin-right: 40%;
+}
 
 
-  .circle_wrap img{
-    margin-top: 10%;
+  .image_here{ 
+  margin-left:20px;   
+    position: relative;  
+  }
+.im{
+  position: absolute;
+  bottom: 40px;
+  margin-left: 100px;
+  top:0px;
+  left: 800px;
+  text-align: right;
+  font-size: 1em;
+  }
+  
+  .smallerText{
+    position: absolute;
+  bottom: 40px;
+  top:0px;
+  left: 800px;
+  text-align: right;
+  font-size: 1em;  
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+
+.nav-collapse {
+right:10%;
+  
+}
+
+#menu{
+margin-left: 50%;
+margin-right: 1%
+}
+
+#menu li:hover{
+margin-left: 5%;
+margin-right: 0%;
+}
+
+  .image_here{  
+  margin-left: 0px;  
+    position: relative;
+ 
+  }
+}
+
+@media (max-width: 480px){
+.nav-collapse {
+left:-10%;  
+}
+#menu{
+margin-left: 20%;
+margin-right: 10%
+}
+
+#menu li:hover{
+margin-right: -5%;
+}
+
+
+
+
+  .image_here{ 
+  margin-left:0px;   
+    position: relative;  
+  }
+}
+  
+
+.circle_wrap img{
+ 	margin-top: 10%;
     margin-left: 14%;
     transform: scale(1,1);
     -ms-transform:scale(1,1); /* IE 9 */
--moz-transform:scale(1,1); /* Firefox */
--webkit-transform:scale(1,1); /* Safari and Chrome */
--o-transform:scale(1,1); /* Opera */
+	-moz-transform:scale(1,1); /* Firefox */
+	-webkit-transform:scale(1,1); /* Safari and Chrome */
+	-o-transform:scale(1,1); /* Opera */
     
- -webkit-transition: all, 0.2s;
+  -webkit-transition: all, 0.2s;
   -moz-transition: all, 0.2s;
   -o-transition: all, 0.2s;
   transition: all, 0.2s;
      -webkit-border-radius: 100px;
         -moz-border-radius: 100px;
              border-radius: 100px;
-
-
-
-  }
-  .twitter-follow-button{
+}
+.twitter-follow-button{
     margin-bottom: 50px;
     margin-left: 10%;
-
-
-  }
-  .circle_wrap:hover img{
-
+}
+.circle_wrap:hover img{
   transform: scale(1.1, 1.1);
-      -ms-transform:scale(1.1, 1.1); /* IE 9 */
--moz-transform:scale(1.1, 1.1); /* Firefox */
+  -ms-transform:scale(1.1, 1.1); /* IE 9 */
+  -moz-transform:scale(1.1, 1.1); /* Firefox */
 -webkit-transform:scale(1.1, 1.1); /* Safari and Chrome */
 -o-transform:scale(1.1, 1.1); /* Opera */
-
-  }
-  .hover-background:hover{
-    background-color: #e8e5e3;
-
-  }
-  .Wrap_title{
+}
+.hover-background:hover{
+  background-color: #e8e5e3;
+}
+.Wrap_title{
     font-family: 'Source Sans Pro', serif;
     font-weight: bold;
     font-size: 20px;
@@ -82,12 +191,9 @@
     text-indent: -70px;
     text-transform: uppercase;
     margin-left: 30%;
-
-
-  }
-    .Wrap_subtitle{
-      margin-left: 30%;
-
+}
+.Wrap_subtitle{
+    margin-left: 30%;
     font-family: 'Source Sans Pro', serif;
     margin-top: -5px;
     margin-bottom:  40px;
@@ -95,22 +201,13 @@
     text-align: center;
     text-indent: -70px;
     text-transform: uppercase;
-
-
-
-  }
-  .Person-summary{
+}
+.Person-summary{
     margin-top:-30px;
     margin-left: 10%;
-
-   
-    
-  }
+}
 </style>
-
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.dotdotdot-1.5.1.js"></script>
 
@@ -147,16 +244,16 @@
     
     <div class="navbar navbar-inverse" id="navigation_bar">
       <div class="navbar-inner">
-        
+        <div class="offset1"><a class="brand" href="#"><img src = "img/tatchit_logo.png"></a></div>
         <div class="container" id = "menu">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#"><img src = "img/tatchit_logo.png"></a>
+
           
-          <div class="nav-collapse collapse">
+          <div class="nav-collapse collapse offset1">
             <ul class="nav">
         
               <li><a href="#what-is-tatchit">WHAT IS TATCHIT?</a></li>
@@ -175,7 +272,7 @@
 
 
       <!-- Example row of columns -->
-
+<div class="row">
          <div class ="image_here"> 
            <img src="img/Boxes/Who_we_are_image.png" alt=""/>
             <div class= "im" >
@@ -183,7 +280,7 @@
                                                                           <br>WHO WE ARE
             </div> <!-- im -->
           </div><!-- image -->
-
+</div>
         
         <div class="white">
           <div class="row"><br><br>
@@ -353,12 +450,6 @@
 
 
 
-    
-
-   <br><br><br><br>
-
-
-
 
 
      <!-- End of row 1-->
@@ -376,7 +467,7 @@
                     <ul class="nav">
                       <li><a href="#got_any_questions"><span style = "color:white">GOT ANY QUESTIONS? </span></a></li>
                       <li><a href="#ask_us_here">ASK US HERE <i class="icon-arrow-right icon-white"></i></a></li>
-                       <div class="span1 offset4" id="social_media_icons">
+                       <div class="span1 offset3" id="social_media_icons">
                           <li><a><img src="img/glyphicons_391_twitter_t.png" 
                                       onmouseover = "this.src= 'img/glyphicons_391_twitter_t_Inv.png'" 
                                       onmouseout  = "this.src= 'img/glyphicons_391_twitter_t.png'">
