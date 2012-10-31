@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tatchit test case</title>
+    <title>Our Cases</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tatchit">
     <meta name="author" content="Meletis">
@@ -10,258 +10,11 @@
     <!-- Le styles -->
     <link href="css/bootstrap.customize.css" rel="stylesheet">
     <link href="css/tatchit.css" rel="stylesheet">
+    <link href="css/responsive_tatchit.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.customize.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
-<style type="text/css">
- body {
-    background-color: #b9aca3;
-    font-family: 'Bitter', serif;
-  }
-  .image_here{
-    margin-left: 30px;
-    position:relative;
-  }
-  .im{
-  position: absolute;
-  bottom: 100px;
-  right: 100px;
-  text-align: right;
-  font-size: 4em;
-}
 
-  .white {
-    background-color: white;
-    margin-left: 0px;
-  }
-  #light_brown{
-    background-color: #e2dedc;
-    margin-left: 0px;
-
-
-  }
-#circle_wrap_class{
- -webkit-transition: all, 0.8s ease;
-  -moz-transition: all, 0.8s ease;
-  -o-transition: all, 0.8s ease;
-  transition: all, 0.8s ease;
-
-
-}
-
-  .circle_wrap img{
-    transform: scale(1,1);
-    -ms-transform:scale(1,1); /* IE 9 */
--moz-transform:scale(1,1); /* Firefox */
--webkit-transform:scale(1,1); /* Safari and Chrome */
--o-transform:scale(1,1); /* Opera */
-    
- -webkit-transition: all, 0.2s;
-  -moz-transition: all, 0.2s;
-  -o-transition: all, 0.2s;
-  transition: all, 0.2s;
-     -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
-             border-radius: 100px;
-
-
-
-  }
-  .circle_wrap:hover img{
-
-  transform: scale(1.1, 1.1);
-      -ms-transform:scale(1.1, 1.1); /* IE 9 */
--moz-transform:scale(1.1, 1.1); /* Firefox */
--webkit-transform:scale(1.1, 1.1); /* Safari and Chrome */
--o-transform:scale(1.1, 1.1); /* Opera */
-
-  }
-  .Wrap_title{
-    font-family: 'Source Sans Pro', serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding-top: 20px;
-    color:#535353;
-    text-align: center;
-    text-indent: -70px;
-    text-transform: uppercase;
-
-
-  }
-    .Wrap_subtitle{
-    font-family: 'Source Sans Pro', serif;
-    margin-top: -5px;
-    margin-bottom:  40px;
-    color:#a8a8a8;
-    text-align: center;
-    text-indent: -70px;
-    text-transform: uppercase;
-  }
-  
-#light_brown h3{
-	word-spacing: 16px;
-} 
-  
-@media (min-width: 979px) and (max-width: 1200px) {
-    #navbar-top .container {
-        width:960px;
-    } 
-#menu{
-margin-left: 19%;
-margin-right: 1%
-}   
-    
-#light_brown h3{
-margin-right:10%;
-word-spacing: 10px;
-} 
-  .image_here{ 
-  margin-left:20px;   
-    position: relative;  
-  }
-   .im{
-  position: absolute;
-  bottom: 200px;
-  top:200px;
-  right: 700px;
-  text-align: left;
-  font-size: 2em;
-  }
-  
-  .smallerText{
-  position: absolute;
-  bottom: 40px;
-  top:0px;
-  left: 800px;
-  text-align: left;
-  font-size: .1em;
-  
-  }  
-}
-@media (min-width: 768px) and (max-width: 979px) {
-
-.nav-collapse {
-left:20%;
-}
-#menu{
-margin-left: 50%;
-margin-right: 1%
-}
-#menu li:hover{
-margin-right: 40%;
-}
-
-.circle_wrap{
-transform: all;
-}
-#light_brown h3{
-margin-right:10%;
-word-spacing: 7px;
-} 
-  .image_here{ 
-  margin-left:0px;   
-    position: relative;  
-  }
-.im{
-  position: absolute;
-  bottom: 40px;
-  margin-left: 100px;
-  top:0px;
-  left: 800px;
-  text-align: right;
-  font-size: 1em;
-  }
-  
-  .smallerText{
-    position: absolute;
-  bottom: 40px;
-  top:0px;
-  left: 800px;
-  text-align: right;
-  font-size: 1em;  
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px){
-
-.nav-collapse {
-right:10%;
-  
-}
-
-
-.circle_wrap{
-transform: all;
-
-
-}
-
-.circle_wrap img{
-margin-left: 25%;
-}
-  
-#light_brown h3{
-margin-right:5%;
-word-spacing: 1px;
-}  
-
-#menu{
-margin-left: 50%;
-margin-right: 1%
-}
-
-#menu li:hover{
-margin-left: 5%;
-margin-right: 0%;
-}
-.image_here{  
-  margin-left: 0px;  
-  position: relative;
- 
-  }
-}
-
-@media (max-width: 480px){
-
-.nav-collapse {
-left:-10%;
-  
-}
-#light_brown h3{
-margin-right:2%;
-word-spacing: 1px;
-} 
-.Wrap_title{
-font-size: medium;}
-
-.Wrap_subtitle{
-font-size: medium;
-}
-
-.circle_wrap{
-transform: all;
-
-
-}
-.circle_wrap img{
-margin-left: 20%;
-}
-
-#menu{
-margin-left: 20%;
-margin-right: 10%
-}
-
-#menu li:hover{
-margin-right: -5%;
-}
-.image_here{ 
-  margin-left:0px;   
-    position: relative;  
-  }
-}
-
-</style>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -334,7 +87,7 @@ margin-right: -5%;
          <div class ="image_here"> 
            <img src="img/Boxes/Execution-blue-image.png" alt=""/>
             <div class= "im" >
-                <span style="font-size:20px; font-family:'Bitter'; font-weight:none; ">WHAT WE DO</span>
+                <div class= "smallerText">WHAT WE DO</div>
                                                                           <br>OUR CASES
             </div> <!-- im -->
           </div><!-- image -->
