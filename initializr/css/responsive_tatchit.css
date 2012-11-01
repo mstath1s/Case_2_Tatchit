@@ -79,10 +79,16 @@ padding-right:2em;
 	 outline: 1px solid #d3cfce;
 	 text-transform: uppercase;
 }
+
 .date-number{
 	font-size:1.8em;
+	 padding: 10px;
+
 }
-.date-month{}
+.date-month{
+	padding-right: 10px;
+	line-height: .1em;
+}
 .Title{display: inline; margin-bottom: 30px;   }
 .post-image{}
 .post-caption{}
@@ -207,7 +213,17 @@ padding-right:1em;
   text-align: right;
   font-size: 0.4em;
   color:fuchsia;
-	}  
+	} 
+	
+.date-number{
+	font-size:1.8em;
+	 padding: 10px;
+
+}
+.date-month{
+	padding-right: 0px;
+	line-height: 1em;
+}	 
 }
 @media (min-width: 768px) and (max-width: 979px) {
 
@@ -306,6 +322,39 @@ margin-top:10px;
   color:green;
 }
 
+#date-id{
+width:50px;
+}
+
+.date-number{
+	font-size:1.8em;
+	 padding: 0px;
+
+}
+.date-month{
+	padding-right: 0px;
+	line-height: 1em;
+}
+
+.Date{ 
+	 display: inline;
+     background: white; 
+     vertical-align: top;
+     width: 50px;
+	 height: 50px; 
+	 padding: 10px;
+	 margin-right: 0;
+	 margin-bottom: 0px;
+	 text-align: right;
+	 outline: 1px solid #d3cfce;
+	 text-transform: uppercase;
+}
+
+.Title {
+width:10px;
+color:red;
+display: inline;}
+
 .multiple-authors-images{
 padding-left:10px;
 
@@ -335,9 +384,6 @@ display: inline;
 width:60px;
 margin:20px;
 }
-
-
-
    
 }
 @media (min-width: 480px) and (max-width: 630px){
@@ -384,6 +430,33 @@ display: inline;
 #blog-image img{
 width:50px;
 margin:20px;}
+}
+
+#date-id{
+width:50px;
+}
+
+.date-number{
+	font-size:1.8em;
+	 padding: 0px;
+
+}
+.date-month{
+	padding-right: 0px;
+	line-height: 1em;
+}
+.Date{ 
+	 display: inline;
+     background: white; 
+     vertical-align: top;
+     width: 50px;
+	 height: 50px; 
+	 padding: 10px;
+	 margin-right: 0;
+	 margin-bottom: 0px;
+	 text-align: right;
+	 outline: 1px solid #d3cfce;
+	 text-transform: uppercase;
 }
 
 @media (max-width: 480px){
@@ -444,5 +517,12 @@ margin:20px;}
   right: 60px;
   font-size: 1.5em;
   text-align: right;
-}    
+}
+#blog-image{
+	display: inline;
+}
+#blog-image img{
+width:60px;
+margin:20px;
+}   
 }
