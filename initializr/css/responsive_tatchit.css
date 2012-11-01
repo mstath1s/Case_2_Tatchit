@@ -139,7 +139,22 @@ margin-right: 1%
 #light_brown h3{
 margin-right:10%;
 word-spacing: 10px;
+}
+
+.hover-background p.Wrap_title, p.Wrap_subtitle{
+padding-left: 3.3em;}
+
+.circle_wrap img{
+margin-left:0px;
+
+}
+
+.hover-background{
+padding-right:1em;
+
+
 } 
+   
   .image_here{ 
   margin-left:20px;   
     position: relative;  
@@ -162,6 +177,7 @@ word-spacing: 10px;
   
   text-align: right;
   font-size: 0.4em;
+  color:fuchsia;
   
   }  
 }
@@ -184,6 +200,7 @@ margin-right: 40%;
 
 .circle_wrap{
 transform: all;
+
 }
 #light_brown h3{
 margin-right:10%;
@@ -196,6 +213,7 @@ word-spacing: 7px;
   
 .hover-background{
 padding-right:1.5em;
+
 
 }
 
@@ -281,8 +299,8 @@ padding-left: 3.3em;}
   .hover-background p.Wrap_title, p.Wrap_subtitle{
 padding-left: 3em;
 }
-  .circle_wrap{padding-left: 15em;
-  				padding-right:15em;}  
+  .circle_wrap{padding-left: 10em;
+  				padding-right:10em;}  
   
 }
 
