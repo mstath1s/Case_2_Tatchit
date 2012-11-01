@@ -10,230 +10,10 @@
     <!-- Le styles -->
     <link href="css/bootstrap.customize.css" rel="stylesheet">
     <link href="css/tatchit.css" rel="stylesheet">
+    <link href="css/responsive_tatchit.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.customize.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
-
-
-<style type="text/css">
- body {
-    background-color: #b9aca3;
-     
-    font-family: 'Bitter', serif;
-  }
-  .image_here{
-   margin-left: 30px;
-   font-size: 4.18em; 
-   font-family:'Bitter';
-   font-weight:none;
-   color: white;
-  
-   
-  }
-
-  
-    .light_brown{
-    background-color: #e2dedc;
-     padding-top: 60px;
-     padding-bottom: 60px;
-	margin-left: 0px;
-
-  }
-
-  .image_here p {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  line-height: 0.6em;
-
-  text-align: right;
-  padding-right: 4em;
-  
-  
-  }
-
-  .multiple-authors-images img{
-    transform: scale(1,1);
-    -ms-transform:scale(1,1); /* IE 9 */
--moz-transform:scale(1,1); /* Firefox */
--webkit-transform:scale(1,1); /* Safari and Chrome */
--o-transform:scale(1,1); /* Opera */
-    
- -webkit-transition: all, 0.2s;
-  -moz-transition: all, 0.2s;
-  -o-transition: all, 0.2s;
-  transition: all, 0.2s;
-     -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
-             border-radius: 100px;
-
-  }
-  
-  @media (min-width: 979px) and (max-width: 1200px) {
-    #navbar-top .container {
-        width:960px;
-    }
-    
-    #menu{
-margin-left: 19%;
-margin-right: 1%
-}  
-    
-  .image_here{ 
-  margin-left:20px;   
-    position: relative;  
-  }
-   .im{
-  position: absolute;
-  bottom: 200px;
-  top:200px;
-  right: 700px;
-  text-align: left;
-  font-size: 2em;
-  }
-  
-  .smallerText{
-  position: absolute;
-  bottom: 40px;
-  top:0px;
-  left: 800px;
-  text-align: left;
-  font-size: .1em;
-  
-  }  
-}
-@media (min-width: 768px) and (max-width: 979px) {
-
-.nav-collapse {
-left:25%;
-}
-#menu{
-margin-left: 50%;
-margin-right: 1%
-}
-#menu li:hover{
-margin-right: 40%;
-}
-
-
-  .image_here{ 
-  margin-left:20px;   
-    position: relative;  
-  }
-.im{
-  position: absolute;
-  bottom: 40px;
-  margin-left: 100px;
-  top:0px;
-  left: 800px;
-  text-align: right;
-  font-size: 1em;
-  }
-  
-  .smallerText{
-    position: absolute;
-  bottom: 40px;
-  top:0px;
-  left: 800px;
-  text-align: right;
-  font-size: 1em;  
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px){
-
-.nav-collapse {
-right:10%;
-  
-}
-
-#menu{
-margin-left: 50%;
-margin-right: 1%
-}
-
-#menu li:hover{
-margin-left: 5%;
-margin-right: 0%;
-}
-
-  .image_here{  
-  margin-left: 0px;  
-    position: relative;
- 
-  }
-}
-
-@media (max-width: 480px){
-
-
-.nav-collapse {
-left:-10%;
-  
-}
-
-#menu{
-margin-left: 20%;
-margin-right: 10%
-}
-
-
-
-#menu li:hover{
-margin-right: -5%;
-}
-
-
-
-
-  .image_here{ 
-  margin-left:0px;   
-    position: relative;  
-  }
-}
-
-  
-
-
-  .white {
-    background-color: white;
-    margin-left: 0px;
-  }
-  #light_brown{
-    background-color: #e2dedc;
-    margin-left: 0px;
-
-  }
-  
-  .Date{ display: inline-block;
-         background: white; 
-         vertical-align: top;
-         width: 30px;
-         height: 30px; 
-         padding: 10px 13px 20px 13px;
-         margin-right: 20px;
-         margin-bottom: 30px;
-         text-align: center;
-         outline: 1px solid #d3cfce;
-         text-transform: uppercase;
-       }
-  .Title{display: inline; margin-bottom: 30px;   }
-  .post-image{}
-  .post-caption{}
-  .caption{}
-   .multiple-authors-images{}
-  .author-details{},
-  .post-article{}
-  .description{}
-  .tags{}
-  .num-comments{}
-  .share-tools{}
-
-
- 
- 
-
-</style>
-
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
@@ -305,22 +85,20 @@ margin-right: -5%;
       <div class="row">
         <div class ="image_here"> 
            <img src="img/Boxes/Blog-image.png" alt=""/>
-            <div class= "im" >
-                <span style="font-size:20px; font-family:'Bitter'; font-weight:none; ">WHAT WE DO</span>
-                                                                          <br>Contact
+            <div class= "im" id = "blog_textOverlay" >
+                 <div class= "smallerText">WHAT WE DO</div>
+                                                                          <br>CONTACT
             </div> <!-- im -->
           </div><!-- image -->
 </div>
         
 
   
-
-
    
-    <div class="row white">
-    <div class="span12">
+    <div class="row" id= "blog_white">
+    <div class="span9 offset1">
       <br><br>
-      <h3 ><center> <span style = "word-spacing:20px;">  SOCIAL    / 
+      <h3 ><center>   SOCIAL    / 
                     CAMPAIGN   / 
                    ADS        /
                      BRANDING /
@@ -335,11 +113,11 @@ margin-right: -5%;
 
 
 
- <div class="row light_brown">
+ <div class="row" id="light_brown">
   <br><br>
   
   <div class="span1 offset2 Date">
-    <span style= "font-size:25px;">17</span> SEP
+    <div class = "date-number">17</div><div class = "date-month">SEP</div>
   </div>
 
   <div class="span5 Title">
@@ -350,11 +128,11 @@ margin-right: -5%;
     <img src="img/Boxes/Blog-imageholder.png">
   </div>
 
-  <div class="span1 multiple-authors-images">
+  <div class="span1 multiple-authors-images" id="blog-image">
     <img src="img/Boxes/Green_circle.png">
   </div>
   
-  <div class="span1 multiple-authors-images">
+  <div class="span1 multiple-authors-images" id="blog-image">
     <img src="img/Boxes/Green_circle.png">
   </div>
   
@@ -397,26 +175,26 @@ margin-right: -5%;
  </div>
 
 
- <div class="row white">
-  <br><br>
-  
+ <div class="row ">
+  <div class= "span12 white">
+    <br><br>
   <div class="span1 offset2 Date">
-    <span style= "font-size:25px;">12</span> SEP
+    <div class = "date-number">12</div><div class = "date-month">SEP</div>
   </div>
 
   <div class="span5 Title">
-    <h2 style= "display:inline; font-weight: normal;">Saving the rainforest by utilising the power of mobility.</h2>
+    <h2 style= "display:inline; font-weight: normal;">Saving rainforest by utilising the power of mobility.</h2>
   </div>
 
   <div class="span6 offset2 post-image">
     <img src="img/Boxes/Blog-imageholder.png">
   </div>
 
-    <div class="span1 multiple-authors-images">
+  <div class="span1 multiple-authors-images" id="blog-image">
     <img src="img/Boxes/Green_circle.png">
 
   </div>
-  <div class="span1 multiple-authors-images">
+  <div class="span1 multiple-authors-images" id="blog-image">
     <img src="img/Boxes/Green_circle.png">
 
   </div>
@@ -455,6 +233,7 @@ margin-right: -5%;
   </div>
 
   
+ </div>
  </div>
 
   <div class="row light_brown">
