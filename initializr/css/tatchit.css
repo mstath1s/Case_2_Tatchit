@@ -139,18 +139,15 @@
         border: 0px solid #ccc;
         height: 50px;
         padding: 10px 20px 5px 10px;
+        padding:0px;
       }
-      .r{
-        width: 400px;
-      }
+
       .box_i {
         border: 0px solid #ccc;
         height: 30px;
         padding: 0px 10px 0px 0px;
       }
-      .r_i{
-        width: 200px;
-      }
+
       .middle_screen{
         padding-left: 180px;
         padding-right: 120px;
@@ -248,6 +245,7 @@
       #social_media_updates{
         font-family: 'Bitter',serif;
         padding-left: 30px;
+        
 
       }
 
