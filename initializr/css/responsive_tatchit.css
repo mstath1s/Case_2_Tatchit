@@ -118,8 +118,21 @@ padding-right:2em;
 	margin:0px;
     
 }
+/*----------End of contact page   -----------------*/
+/*-------- Strategy page ----------*/
+#strategy-white{
+	background-color: white;
+	margin: 0px;
+
+	
+	padding: 10px;
+}
 
 
+#strategy-white img{
+margin-left: -30px;
+
+}
 
 .smallerText{
   position: absolute;
@@ -232,7 +245,15 @@ padding-right:1em;
   text-align: right;
   font-size: 0.4em;
   color:fuchsia;
-	} 
+	}
+	
+#strategy-white .Wrap_title{
+font-size:1.2em;
+margin-left:20px;}	
+
+#strategy-white .Wrap_subtitle{
+font-size:.8em;
+margin-left:-10px;}	 
 	
 .date-number{
 	font-size:1.8em;
@@ -315,6 +336,19 @@ padding-left: 3.3em;}
 
 margin-top:10px;
 }
+
+#strategy-white .Wrap_title{
+font-size:0.9em;
+margin-left:15px;}	
+
+#strategy-white .Wrap_subtitle{
+font-size:.7em;
+line-height: 0.5em;
+margin-left:-10px;}	
+
+
+
+ 
 }
 @media (min-width: 630px) and (max-width: 767px){
 .image_here{  
@@ -339,6 +373,11 @@ margin-top:10px;
   text-align: right;
   font-size: 0.4em;   
   color:green;
+}
+
+#strategy-white img{
+margin-left: 80px;
+
 }
 
 #date-id{
@@ -374,6 +413,8 @@ width:10px;
 color:red;
 display: inline;}
 
+
+
 .multiple-authors-images{
 padding-left:10px;
 
@@ -387,7 +428,7 @@ padding-left:10px;
   	padding-right:10em;
 
  }
- 
+
 #blog_textOverlay{
   top:1.0em;
   right: 130px;
@@ -403,6 +444,17 @@ display: inline;
 width:60px;
 margin:20px;
 }
+
+#strategy-white .Wrap_title{
+
+margin-left:15px;}	
+
+#strategy-white .Wrap_subtitle{
+
+line-height: 0.5em;
+margin-left:-10px;}	
+
+ 
    
 }
 @media (min-width: 480px) and (max-width: 630px){
@@ -449,10 +501,15 @@ display: inline;
 #blog-image img{
 width:50px;
 margin:20px;}
-}
+
 
 #date-id{
 width:50px;
+}
+
+#strategy-white img{
+margin-left: 160px;
+
 }
 
 .date-number{
@@ -476,6 +533,16 @@ width:50px;
 	 text-align: right;
 	 outline: 1px solid #d3cfce;
 	 text-transform: uppercase;
+}
+#strategy-white .Wrap_title{
+
+margin-left:80px;}	
+
+#strategy-white .Wrap_subtitle{
+
+line-height: 0.5em;
+margin-left:0px;}	
+
 }
 
 @media (max-width: 480px){
@@ -543,5 +610,10 @@ width:50px;
 #blog-image img{
 width:60px;
 margin:20px;
-}   
+} 
+#strategy-white img{
+margin-left: 90px;
+
+}
+ 
 }
