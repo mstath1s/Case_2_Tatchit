@@ -34,6 +34,32 @@ padding-right:2em;
 .hover-background:hover{
   background-color: #e8e5e3;
 }
+
+#got_footer{
+height: 0.5em;
+letter-spacing: 0.2em;
+word-spacing: 0.2em;
+color:white;
+
+font-weight: 200;
+
+}
+
+#ask_footer{
+letter-spacing: 0.2em;
+word-spacing: 0.2em;
+
+padding-top: 0em;
+margin-top: 0px;
+
+
+font-weight: 200;
+
+padding-left:0em;
+}
+
+
+
 /* ------------ End of Who we are page -----------   */
 
 
@@ -339,7 +365,42 @@ padding-right:1em;
   text-align: right;
   font-size: 0.4em;
   color:fuchsia;
-	}
+}
+
+#got_footer{
+height: 0.5em;
+letter-spacing: 0.2em;
+word-spacing: 0.2em;
+color:white;
+margin-left: -50px;
+font-weight: 200;
+
+}
+
+#ask_footer{
+letter-spacing: 0.2em;
+word-spacing: 0.2em;
+
+padding-top: 0em;
+margin-top: 0px;
+
+
+font-weight: 200;
+
+padding-left:0em;
+}
+
+#social_media_icons{
+
+padding: 0px;
+margin: 0px;
+margin-top:10px;
+margin-left: 150px;
+
+
+}
+
+
 	
 #strategy-white .Wrap_title{
 font-size:1.2em;
@@ -431,6 +492,38 @@ padding-left: 3.3em;}
 margin-top:10px;
 }
 
+
+#got_footer{
+height: 0.5em;
+letter-spacing: 0.2em;
+word-spacing: 0.2em;
+color:white;
+margin-left: -100px;
+font-weight: 200;
+right:100px;
+}
+
+#ask_footer{
+letter-spacing: 0.2em;
+word-spacing: 0.2em;
+
+padding-top: 0em;
+margin-top: 0px;
+margin-left: -20px;
+
+font-weight: 200;
+
+padding-left:0em;
+}
+
+ #social_media_icons{
+margin-left: 0px;
+ 
+width:100px;
+
+
+}
+
 #strategy-white .Wrap_title{
 font-size:0.9em;
 margin-left:15px;}	
@@ -471,6 +564,37 @@ margin-left:-10px;}
 
 #strategy-white img{
 margin-left: 80px;
+
+}
+
+#got_footer{
+height: 0.5em;
+letter-spacing: 0.2em;
+word-spacing: 0.2em;
+color:white;
+padding-left:2em;
+font-weight: 200;
+}
+
+#ask_footer{
+letter-spacing: 0.2em;
+word-spacing: 0.2em;
+
+padding-top: 0em;
+margin-top: 0px;
+
+font-weight: 200;
+
+padding-left:2em;
+}
+
+ #social_media_icons{
+ padding-top: 50px;
+ padding-left: 100px;
+ padding-bottom: 30px;
+ 
+width:200px;
+
 
 }
 
@@ -578,6 +702,17 @@ margin-left:-10px;}
   font-size: 0.4em; 
     color:red;
 }
+
+
+#got_footer{
+color:fuchsia;
+padding-left:1em;
+}
+
+#ask_footer{
+padding-left:50em;
+color:fuchsia;
+}  
 
 #blog_textOverlay{
   top:0.8em;
@@ -692,6 +827,36 @@ margin-left:0px;}
     color:yellow;  
   }
   
+#footer{
+margin: 0px;
+line-height: 10px;
+padding: 0px;
+
+
+}  
+#got_footer{
+height: 0.5em;
+letter-spacing: 0.2em;
+word-spacing: 0.2em;
+color:white;
+padding-left:5em;
+font-weight: 200;
+
+
+}
+
+#ask_footer{
+letter-spacing: 0.2em;
+word-spacing: 0.2em;
+
+padding-top: 0em;
+margin-top: 0px;
+
+font-weight: 200;
+
+padding-left:5em;
+}  
+  
 #tumblelog .col3 { width: 338px; }  
   
 #blog_textOverlay{
@@ -702,6 +867,16 @@ margin-left:0px;}
 }
 #blog-image{
 	display: inline;
+}
+
+ #social_media_icons{
+ padding-top: 50px;
+ padding-left: 140px;
+ padding-bottom: 30px;
+ 
+width:200px;
+
+
 }
 #blog-image img{
 width:60px;

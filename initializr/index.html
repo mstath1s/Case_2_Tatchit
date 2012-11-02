@@ -10,6 +10,7 @@
     <!-- Le styles -->
     <link href="css/bootstrap.customize.css" rel="stylesheet">
     <link href="css/tatchit.css" rel="stylesheet">
+    <link href="css/responsive_tatchit.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.customize.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
@@ -79,7 +80,7 @@
 
 
     <!-- Menu bar-->
-    
+  <div class="container">
     <div class="navbar navbar-inverse" id="navigation_bar">
       <div class="navbar-inner">
         <div class="container" id = "menu">
@@ -122,41 +123,51 @@
 
 
       <!-- Example row of columns -->
-        <div class="row" >
-         <div class ="image"> 
+<div class="row">
+         <div class ="image_here"> 
            <img src="img/Tatchit_picture.png" alt=""/>
             <div class= "im" >
-                <span style="font-size:20px; font-family:'Bitter'; font-weight:none; ">WEB</span>
+                <div class= "smallerText">WHAT WE DO</div>
                                                                           <br>CLOUD ATLAS
-            </div>
-          </div>
-        </div> 
+            </div> <!-- im -->
+          </div><!-- image -->
+</div> <!-- End of row -->
         
-        <div class="middle_screen">
-          <div class="row" id="white_part_first_row">
-            <div class= "span7" id="Title_row">
+
+     <div class="row" id="white_part_first_row">
+            
+           <div class= "span7 offset2" id="Title_row">
               <h2> 
                 <span style="font-weight:normal;">DISCIPLINED CREATIVE UNMATCHED PRODUCTION IN THE
                 <a href="#right_direction">RIGHT DIRECTION.</a> </span>
               </h2>
               <br>
-            </div> 
-        <div class="row"></div> 
+           </div> <!-- span7 -->
+ 
 
-          <div class="span5">
-              <p>This place is built on a foundation of rock-star producers and artists: a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry. We exist to serve our clients. Period. In addition to amazing talent, we also pack some hardware. Funnelbox Production Studios owns and maintains the equipment</p>
-         </div>
-          <div class="span5">
+          <div class="span5 offset2">
+              <p>This place is built on a foundation of rock-star producers and artists: 
+              a team of committed creatives who work tirelessly to deliver world-class
+               production with a dedication to serve that’s second to none in the video
+                production industry. We exist to serve our clients. Period. In addition 
+                to amazing talent, we also pack some hardware. Funnelbox Production Studios
+                 owns and maintains the equipment</p>
+         </div> <!-- span5 -->
+         
+          <div class="span3">
             <p>
-               This place is built on a foundation of rock-star producers and artists: a team of committed creatives who work tirelessly to deliver 
+               This place is built on a foundation of rock-star 
+               producers and artists: a team of committed creatives
+                who work tirelessly to deliver 
                <a href="#world_class">world-class production </a> with a dedication to serve that’s </p>
-               <br>
+               
             
-            <p> <a class="btn btn-link" href="#">CHECK IT OUT</a>
+             <p><a class="btn btn-link" href="#">CHECK IT OUT</a>
                 <a class="btn btn-link" href="#">GO GET YOUR FILL</a>
             </p>
-          </div>
-      </div>
+          </div> <!-- span5 -->
+          
+     
     </div>
       <!-- End of row 1-->
 
@@ -252,7 +263,7 @@
         <span style ="color:grey">
         <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SOCIAL CHANNELS</h4><br>
         <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INSTAGRAM</h4></span>
-        <div class="span4">
+        <div class="span3">
             <div id="myCarousel" class="carousel slide">
               <!-- Carousel items -->
               <div class="carousel-inner">
@@ -271,7 +282,7 @@
             </div>
        
         </div>
-        <div class="span4">
+        <div class="span3">
           <div id="myCarousel1" class="carousel slide">
             <!-- Carousel items -->
             <div class="carousel-inner">
@@ -394,20 +405,17 @@
       </div>
 
       <!-- End of row 3-->
-      <footer>
+
             <div class="navbar navbar-inverse"  >
               <div class="navbar-inner">
                 <div class="container" id ="footer">
-                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </a>
-                  <div class="nav-collapse collapse">
+                  
+                 
                     <ul class="nav">
-                      <li><a href="#got_any_questions"><span style = "color:white">GOT ANY QUESTIONS? </span></a></li>
-                      <li><a href="#ask_us_here">ASK US HERE <i class="icon-arrow-right icon-white"></i></a></li>
-                       <div class="span1 offset6" id="social_media_icons">
+                      <li><a href="#got_any_questions"><div id="got_footer">GOT ANY QUESTIONS?</div></a></li>
+                      <li><a href="#ask_us_here"><div id="ask_footer">ASK US RIGHT HERE
+<i class="icon-arrow-right icon-white"></i>                      </div> </a></li>
+                       <div class="span1 offset3" id="social_media_icons">
                           <li><a><img src="img/glyphicons_391_twitter_t.png" 
                                       onmouseover = "this.src= 'img/glyphicons_391_twitter_t_Inv.png'" 
                                       onmouseout  = "this.src= 'img/glyphicons_391_twitter_t.png'">
@@ -415,12 +423,14 @@
                                       onmouseover = "this.src= 'img/glyphicons_390_facebook_Inv.png'" 
                                       onmouseout  = "this.src= 'img/glyphicons_390_facebook.png'">
                           </a></li>              
-                       </div>
+
                   </div>
               </div>
           </div>
         </div>
-      </footer>
+
+      
+      </div>
 
     </div> <!-- /container -->
   

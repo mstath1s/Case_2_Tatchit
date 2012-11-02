@@ -22,6 +22,9 @@
       .btn-link{
         background-color: #b9aca3;
         color:white;
+        padding-left: 5px;
+        padding-right: 5px;
+
       }
       .hero-unit{
         background-color:#b9aca3;  
@@ -182,6 +185,8 @@
         color: white;
         line-height:  100px;
         padding-bottom: 100px;
+        padding:0px;
+        margin-left: 0px;
       }
       #white_part{
         background-color:white;
@@ -190,12 +195,14 @@
         padding-right: 120px;
         padding-top: 40px;
         padding-bottom: 80px;
+        margin-left: 0px;
       }
 
       #white_part_first_row{
         font-family: 'Bitter', serif;
         background-color:white;
         color: black;
+        margin-left: 0px;
         padding-top: 40px;
         padding-bottom: 80px; 
       }
