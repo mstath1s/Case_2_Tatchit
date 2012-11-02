@@ -103,6 +103,24 @@ padding-right:2em;
   
 /*----------End of blog page   -----------------*/
 
+
+/*-------- Contact page ----------*/
+#contact-white{
+
+	background-color: white;
+	margin: 0px;
+	padding: 10px;
+}
+#contact-light_brown{
+    background-color: #e2dedc;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin:0px;
+    
+}
+
+
+
 .smallerText{
   position: absolute;
   bottom: 40px;
@@ -119,6 +137,7 @@ padding-right:2em;
 #light_brown{
     background-color: #e2dedc;
     margin-left: 0px;
+    
 }
 #circle_wrap_class{
  -webkit-transition: all, 0.8s ease;
