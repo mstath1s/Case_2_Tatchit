@@ -181,6 +181,37 @@ font-size: 0.9em;}
 margin-bottom: 0px;
 }
 
+#tumblelog .text_box img {
+padding: 10px;
+width:50px;
+}
+
+.mas_tex {
+padding: 10px;
+
+}
+
+#tumblelog .text_box h4{
+margin-top: -60px;
+margin-left: 70px;
+margin-bottom: 0px;
+color: black;
+
+
+
+}
+
+.mas_date{
+line-height: 1.2em;
+padding-top: -10px;
+padding-left: 70px;
+margin-left: 0px;
+color:red;
+
+
+}
+
+
 
 /*---- End of connect with us  page ------*/
 
