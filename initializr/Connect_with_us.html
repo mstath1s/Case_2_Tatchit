@@ -10,419 +10,11 @@
     <!-- Le styles -->
     <link href="css/bootstrap.customize.css" rel="stylesheet">
     <link href="css/tatchit.css" rel="stylesheet">
+    <link href="css/responsive_tatchit.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.customize.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
-<style type="text/css">
-body {
-    background-color: #b9aca3;
-    font-family: 'Bitter', serif;
-}
-.image_here{ 
-  margin-left:30px;
-  position: relative; 
-} 
-.im{
-  position: absolute;
-  bottom: 100px;
-  right: 100px;
-  text-align: right;
-  font-size: 4em;
-}
-.white {
-    background-color: white;
-    margin-left: 0px;
-    padding-top:  50px;
-}
-#light_brown{
-    background-color: #e2dedc;
-    margin-left: 0px;
-} 
-#example1 { 
-  border: 1px solid #e2e2e2;
-}
-.item { 
-  color: #bebebe;
-  border: 5px solid white;
-  word-break: break-all;
-  word-wrap: break-word;
-}
-.white_background{
-background-color: white;
-color:black;
-}
 
-/* Start: Recommended Isotope styles */
-
-/**** Isotope Filtering ****/
-
-.isotope-item {
-  z-index: 2;
-}
-
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
-
-/**** Isotope CSS3 transitions ****/
-
-.isotope,
-.isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
-          transition-property:         transform, opacity;
-}
-
-#content{
-background-color: #e2dedc;
-}
-
-.sites img{
-margin-right: -4px;
-margin-bottom: 3px;
-border: 3px solid white;
-}
-
-
-.element {
-  width: 110px;
-
-  margin: 3px;
-  float: left;
-  overflow: hidden;
-  
-  position: relative;
-  background: white;
-  color: black;
-  -webkit-border-top-right-radius: .2em;
-      -moz-border-radius-topright: .2em;
-          border-top-right-radius: .2em;
-}
-
-.element * {
-  position: absolute;
-  margin: 0;
-}
-
-.element .symbol {
-  left: 0.2em;
-  top: 0.4em;
-  font-size: 3.8em;
-  line-height: 1.0em;
-  color: #FFF;
-}
-.element.large .symbol {
-  font-size: 4.5em;
-}
-
-.element.fake .symbol {
-  color: #000;
-}
-
-.element img {
-  left: 0.8em;
-  top: 0.8em;
-  
-}
-
-.element .weight {
-  font-size: 0.9em;
-  left: 0.5em;
-  bottom: 0.5em;
-}
-
-.element .number {
-  font-size: 1.25em;
-  font-weight: bold;
-  color: hsla(0,0%,0%,.5);
-  right: 0.5em;
-  top: 0.5em;
-}
-
-
-
-
-.variable-sizes .element.width3 { width: 30%; }
-
-.variable-sizes .element.height3 { height:330px; }
-
-.variable-sizes .element.width3.height3 {
-  font-size: 3.0em;
-}
-
-
-.variable-sizes .element.width4 { width: 40%; }
-
-.variable-sizes .element.height4 { height: 400px; }
-
-.variable-sizes .element.width4.height4 {
-  font-size: 4.0em;
-}
-
-.variable-sizes .element.width5 { width: 50%; }
-
-.variable-sizes .sites.width5 img{ width: 50%; }
-.variable-sizes .sites.width2 { width: 50%; }
-
-.variable-sizes .element.height5 { height: 500px; }
-
-.variable-sizes .element.width5.height5 {
-  font-size: 5.0em;
-}
-
-.variable-sizes .element.width2 { width: 20%; }
-
-.variable-sizes .element.height2 { height: 230px; }
-
-.variable-sizes .element.width2.height2 {
-  font-size: 2.0em;
-}
-
-.element.large,
-.variable-sizes .element.large,
-.variable-sizes .element.large.width2.height2 {
-  font-size: 3.0em;
-  width: 350px;
-  height: 350px;
-  z-index: 100;
-}
-
-/**** Horizontal ****/
-
-.horizontal #container {
-  height: 80%;
-}
-
-#copy {
-  max-width: 640px;
-}
-
-
-
-
-
-/**** Sites using Isotope ****/
-
-#sites h2 {
-  display: none;
-  padding: 0.4em;
-  line-height: 32px;
-  margin-bottom: 0.4em;
-  -webkit-transition: background-color 0.8s;
-     -moz-transition: background-color 0.8s;
-       -o-transition: background-color 0.8s;
-          transition: background-color 0.8s;
-}
-
-#sites h2 img {
-  display: inline-block;
-  margin-right: 0.4em;
-  vertical-align: bottom;
-}
-
-#sites h2.loading {
-  background: white;
-  color: #222;
-}
-#sites h2.error {
-  background: red;
-  color: #222;
-}
-
-
-#sites ul {
-  margin: 0;
-}
-
-
-
-
-
-
-
-@media (min-width: 979px) and (max-width: 1200px) {
-	#navbar-top .container {
-	       width:960px;
-	} 
-	    
-	.image_here{ 
-	  margin-left:20px;   
-	  position: relative;  
-	}
-	.im{
-	  position: absolute;
-	  bottom: 200px;
-	  top:200px;
-	  right: 700px;
-	  text-align: left;
-	  font-size: 2em;
-	}
-	  
-	.smallerText{
-	  position: absolute;
-	  bottom: 40px;
-	  top:0px;
-	  left: 800px;
-	  text-align: left;
-	  font-size: .1em; 
-	}  
-}
-@media (min-width: 768px) and (max-width: 979px) {
-
-.nav-collapse {
-	left:25%;
-}
-#menu{
-margin-left: 50%;
-margin-right: 1%
-}
-#menu li:hover{
-margin-right: 40%;
-}
-
-
-  .image_here{ 
-  margin-left:20px;   
-    position: relative;  
-  }
-.im{
-  position: absolute;
-  bottom: 40px;
-  margin-left: 100px;
-  top:0px;
-  left: 800px;
-  text-align: right;
-  font-size: 1em;
-  }
-  
-  .smallerText{
-    position: absolute;
-  bottom: 40px;
-  top:0px;
-  left: 800px;
-  text-align: right;
-  font-size: 1em;  
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px){
-
-.nav-collapse {
-right:10%;
-  
-}
-
-#menu{
-margin-left: 50%;
-margin-right: 1%
-}
-
-#menu li:hover{
-margin-left: 5%;
-margin-right: 0%;
-}
-
-  .image_here{  
-  margin-left: 0px;  
-    position: relative;
- 
-  }
-}
-
-@media (max-width: 480px){
-.nav-collapse {
-left:-10%;  
-}
-#menu{
-margin-left: 20%;
-margin-right: 10%
-}
-
-#menu li:hover{
-margin-right: -5%;
-}
-
-
-
-
-  .image_here{ 
-  margin-left:0px;   
-    position: relative;  
-  }
-}
-
-
-
-  .circle_wrap img{
-    transform: scale(1,1);
-    -ms-transform:scale(1,1); /* IE 9 */
--moz-transform:scale(1,1); /* Firefox */
--webkit-transform:scale(1,1); /* Safari and Chrome */
--o-transform:scale(1,1); /* Opera */
-    
- -webkit-transition: all, 0.2s;
-  -moz-transition: all, 0.2s;
-  -o-transition: all, 0.2s;
-  transition: all, 0.2s;
-     -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
-             border-radius: 100px;
-
-
-
-  }
-  .circle_wrap:hover img{
-
-  transform: scale(1.1, 1.1);
-      -ms-transform:scale(1.1, 1.1); /* IE 9 */
--moz-transform:scale(1.1, 1.1); /* Firefox */
--webkit-transform:scale(1.1, 1.1); /* Safari and Chrome */
--o-transform:scale(1.1, 1.1); /* Opera */
-
-  }
-  .Wrap_title{
-    font-family: 'Source Sans Pro', serif;
-    font-weight: bold;
-    font-size: 18px;
-    padding-top: 20px;
-    color:#535353;
-    text-align: center;
-    text-indent: 0px;
-    text-transform: uppercase;
-
-
-  }
-  .Wrap_subtitle{
-    font-family: 'Source Sans Pro', serif;
-    margin-top: -5px;
-    font-size: 14px;
-    margin-bottom:  40px;
-    color:#a8a8a8;
-    text-align: center;
-    text-indent: 0px;
-    text-transform: uppercase;
-  }
-
-</style>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -491,19 +83,18 @@ margin-right: -5%;
 
 
       <!-- Example row of columns -->
-<div class = "row">
+<div class="row">
          <div class ="image_here"> 
            <img src="img/Boxes/Production-image-cyan.png" alt=""/>
             <div class= "im" >
-                <div class="smallerText"><span style="font-family:'Bitter'; font-weight:none; ">WHAT WE DO</span> <br>
-                <span style=" font-family:'Source Sans Pro'; font-weight:bolder; ">CONNECT WITH US</span></div>
+                <div class= "smallerText">WHAT WE DO</div>
+                                                                          <br>OUR CASES
             </div> <!-- im -->
           </div><!-- image -->
-          
 </div>
 
       
-<div class = "row white">
+<div class = "row" id ="strategy-white">
  
    <div class="span3 offset2">
                <img src="img/Boxes/Production-circles.png" alt=""/>
@@ -513,7 +104,9 @@ margin-right: -5%;
                 <span style="font-weight:normal;">WE INSPIRE & EVOLVE SOCIAL COMMUNICATION
                 <a href="#right_direction">EVERYDAY BABY.</a> </span>
               </h2><br><br>
-                    <p>This place is built on a foundation of rock-star producers and artists: a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video.</p>
+                    <p>This place is built on a foundation of rock-star producers and artists: 
+                    a team of committed creatives who work tirelessly to deliver world-class 
+                    production with a dedication to serve that’s second to none in the video.</p>
 <br><br>
 <br><br>
 
@@ -532,7 +125,10 @@ margin-right: -5%;
       </span>  </h3>
         <br><br>
    
-      <p>This place is built on a foundation of rock-star producers and artists: a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry.</p>
+      <p>This place is built on a foundation of rock-star producers and 
+      artists: a team of committed creatives who work tirelessly to 
+      deliver world-class production with a dedication to serve that’s
+       second to none in the video production industry.</p>
 
   <br><br>
 </div>
@@ -558,9 +154,12 @@ margin-right: -5%;
     		                <div class="sites">
 		                   <img alt="Agra picture" src="img/photos-images/Agra-1.JPG">
 		                </div>
-		            	 <div class="element width4">
+		            	 <div class="element width4 height1">
 		            	 <img alt="brand" src="img/tatchit_logo_grey.png"><br>
-		                   <p class="number">26This place is built on a foundation of rock-star producers and artists:<br> a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry.</p>
+		                   <p class="weight">26This place is built on a foundation of rock-star producers
+		                    and artists:<br> a team of committed creatives who work tirelessly to deliver
+		                     world-class production with a dedication to serve that’s second to none in 
+		                     the video production industry.</p>
 		                </div>
 		                <div class="sites">
 		                  <img alt="Agra picture" src="img/photos-images/Agra-3.JPG"> 
@@ -594,7 +193,10 @@ margin-right: -5%;
 		
 		                <div class="element width2 height4">
 		                <img alt="brand" src="img/tatchit_logo_grey.png">
-		                   <p class="weight">10.811This place is built on a foundation of rock-star producers and artists:<br> a team of committed creatives who work tirelessly to deliver world-class production with a dedication to serve that’s second to none in the video production industry.</p>
+		                   <p class="weight">10.811This place is built on a foundation of rock-star
+		                    producers and artists:<br> a team of committed creatives who work tirelessly
+		                     to deliver world-class production with a dedication to serve that’s second
+		                      to none in the video production industry.</p>
 		                </div>
 		
 		
@@ -619,57 +221,12 @@ margin-right: -5%;
 		                    <img alt="Agra picture" src="img/photos-images/Agra-9.JPG">
 		                </div>
     
-    
-    
-    
-    
-
-    
-      
-          
-  
-    
-      
   </div>
-
   
-  
-
-
-    
   </section> <!-- #content -->                
- 
-
-
-         
+       
               </div>
  </div>
- 
-
-        
-  
-
-
-
-
-<!--<div class = "span4"> <> </div>
-<div class = "span5"> </div>
-
-<div class = "span4"> </div>
-<div class = "span4"> </div>
-<div class = "span1"> </div>
-
-<div class = "span2"> </div>
-<div class = "span2"> </div>
-<div class = "span3"> </div>
-<div class = "span2"> </div>
-
--->
-
-
-
-     <!-- End of row 1-->
-
 
             <div class="navbar navbar-inverse"  >
               <div class="navbar-inner">
@@ -701,9 +258,7 @@ margin-right: -5%;
 
 
     </div>
-
-
-  
+ 
 
     <!-- Le javascript
     ================================================== -->
@@ -720,7 +275,7 @@ margin-right: -5%;
     
       $container.isotope({
         masonry: {
-          columnWidth: 10
+          columnWidth: 5
         }
          });
 
