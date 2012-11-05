@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Contact</title>
+    <title>Noble creative</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tatchit">
     <meta name="author" content="Meletis Stathis">
@@ -10,6 +10,7 @@
     <!-- Le styles -->
     <link href="../css/bootstrap.customize.css" rel="stylesheet">
     <link href="../css/responsive_tatchit.css" rel="stylesheet">
+    <link href="../css/lightbox.css" rel="stylesheet">
     <link href="../css/bootstrap-responsive.customize.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
@@ -18,6 +19,7 @@
     <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
     <script src="../js/vendor/jquery.dotdotdot-1.5.1.js"></script>
     <script src="../js/plugins.js"></script>
+    <script src="../js/lightbox.js"></script>
     <script src="../js/main.js"></script>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -36,37 +38,48 @@
 
  <div class="container">
     
-    <div class="navbar navbar-inverse" >
-      <div class="navbar-inner" id="navbar-top">
-       <div class="offset1"><a class="brand" href="#"><img src = "../img/tatchit_logo.png"></a></div>
+    <div class="navbar navbar-inverse" id="navigation_bar">
+      <div class="navbar-inner">
+       <div class="offset1"><a class="brand" href="#"><img src = "../img/tatchit_logo.png"></a></div>      
         <div class="container" id = "menu">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-   
-          <div class="nav-collapse collapse offset1">
+          <div class="nav-collapse collapse" style="font-size:.91em;">
             <ul class="nav">
-        
-              <li><a href="#what-is-tatchit">WHAT IS TATCHIT?</a></li>
-              <li><a href="#our-clients">OUR CLIENTS</a></li>
-              <li><a href="#resources">RESOURCES</a></li>
-              <li><a href="#about-us">ABOUT US </a></li>
+              <li><a href="#who_we_are">WHO WE ARE</a></li>
+              <li><a href="#what_we_do">WHAT WE DO</a></li>
+              <li><a href="#toolbox">TOOLBOX</a></li>
+              <li><a href="#connect_with_us">CONNECT WITH US</a></li>
+              <li><a href="#blog">BLOG </a></li>
               <li><a href="#contact">CONTACT</a></li>
 
-          </div><!--/.nav-collapse -->
-        </div><!--/container -->
-      </div><!--/navbar-inner -->
-    </div><!--/navbar navbar-inverse -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="icon"> 
+                  <img src ="../img/gb.png">
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#English" id ="English"> ENGLISH</a></li>
+
+                  <li><a href="#Italian">ITALIAN</a></li>
+                  <li><a href="#Swedish">SWEDISH</a></li>
+                  <li><a href="#Greek">GREEK</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div> <!-- navigation_bar -->
     
 <div class="row">
  <div class ="image_here"> 
-   <img src="../img/Boxes/Contact-image.png" alt=""/>
-    <div class= "text-overlay" >
-        <div class= "smallerText">WHAT WE DO</div>
-                              <br>CONTACT
-    </div> <!-- im -->
+   <img src="../img/Boxes/Noble-case-image.png" alt=""/>
+
   </div><!-- image -->
 </div>    <!-- End of row -->  
 
@@ -78,10 +91,10 @@
          <img src="../img/Boxes/Blog-people-icon.png" alt=""/>
        </div>           
             
-       <div class= "span7">
+       <div class= "span5 offset1">
          <h2> 
-         <span style="font-weight:normal;">CAN'T FIND US?
-         <a href="#right_direction">HERE YOU GO</a> </span>
+         <span style="font-weight:normal;">NOBLE CREATIVE UNMATCHED PRODUCTION 
+         IN THE RIGHT </span>
          </h2>
          <br>
 			<p>This place is built on a foundation of rock-star producers and
@@ -96,64 +109,97 @@
 
  <div class="row" id= "contact-light_brown">
  
-  <div class= "span5 offset1 line_height">
-    <h3>STOCKHOLM, HQ </h3><br>
+  <div class= "span10 offset1 line_height">
+    <h3>STRATEGY & UX </h3><br>
+    <div class="btn-group" data-toggle="buttons-radio">
+	  <center><button type="button" class="btn active" data-toggle="button">FINISHED DESIGN</button>
+	  <button type="button" class="btn">WIREFRAME</button>
+	  </center>
     <p>This place is built on a foundation of rock-star designers.</p>
+    <p><img src="../img/Boxes/Grey_horizontal_box_486.png" alt=""/></p>
       +46 8 52 80 77 70<br>
       stockholm@greatworks.se<br>
       Drottninggatan 89<br>
       113 60 Stockholm<br>
       SWEDEN
-	  <p><a class="btn btn-link" href="#">GO GET YOUR FILL</a></p>
   </div> 
  
-  <div class="span3 offset2">
-	<span class = "circle_wrap"> 
-	<img src="../img/Boxes/Square.png" alt=""/>
-	</span>
-  </div> 
+
         
  </div> <!-- contact-light_brown -->
 
- <div class="row" id="contact-white">
-   
-   <div class= "span5 offset1 line_height">
-    <h3>MILANO </h3><br>
-    <p>This place is built on a foundation of rock-star designers.</p>
-      +46 8 52 80 77 70<br>
-      stockholm@greatworks.se<br>
-      Drottninggatan 89<br>
-      113 60 Stockholm<br>
-      SWEDEN
-	<p><a class="btn btn-link" href="#">GO GET YOUR FILL</a></p>
-   </div>
+ <div class="row " id="noble_white">
 
-   <div class="span3 offset2">
-     <span class = "circle_wrap"> 
-      <img src="../img/Boxes/Square.png" alt=""/>
-     </span>
-	</div> 
-	
- </div>  <!-- contact white -->
+   <div class= "span10 offset1 line_height" >
+    <h3>SOLUTION & PROCESS </h3><br>
+    <p>This place is built on a foundation of rock-star designers.</p>
+   </div>
+ </div>
+   
+ <div class="row" id="noble_white">
+  <div class= "span5 offset1 line_height" >
+   <p><img src="../img/Boxes/Grey_square.png" alt=""/></p>
+  </div>      
+  
+  <div class="span5">
+   <p><img src="../img/Boxes/Grey_square.png" alt=""/></p>
+  </div> 
+ </div>  
+      
+ <div class="row " id="noble_white">
+    <div class= "span10 offset1 line_height">
+       <p>This place is built on a foundation of rock-star designers.</p>
+    </div>
+ </div> 
+ 
+ <div class="row imageRow" id="noble_white">
+  <div class ="span1 offset1 single" id = "lightbox_i" >
+   <a href="../img/Boxes/Grey_square.png" rel="lightbox"  ><img src="../img/Boxes/Grey_square.png"></a>
+  </div>      
+  
+  <div class ="span1 single" id = "lightbox_i" >
+   <a href="../img/Boxes/Grey_square.png" rel="lightbox"  ><img src="../img/Boxes/Grey_square.png"></a>
+  </div> 
+  
+  <div class ="span1 single" id = "lightbox_i" >
+   <a href="../img/Boxes/Grey_square.png" rel="lightbox"  ><img src="../img/Boxes/Grey_square.png"></a>
+  </div> 
+
+  <div class ="span1 single" id = "lightbox_i" >
+   <a href="../img/Boxes/Grey_square.png" rel="lightbox"  ><img src="../img/Boxes/Grey_square.png"></a>
+  </div> 
+
+  <div class ="span1 single" id = "lightbox_i" >
+   <a href="../img/Boxes/Grey_square.png" rel="lightbox"  ><img src="../img/Boxes/Grey_square.png"></a>
+  </div> 
+
+  <div class ="span1  single" id = "lightbox_i" >
+   <a href="../img/Boxes/Grey_square.png" rel="lightbox"  ><img src="../img/Boxes/Grey_square.png"></a>
+  </div> 
+  
+  <div class ="span1 single" id = "lightbox_i" >
+   <a href="../img/Boxes/Grey_square.png" rel="lightbox"  ><img src="../img/Boxes/Grey_square.png"></a>
+  </div>           
+  
+ </div>  
+
+    
+
 
  <div class="row"id="contact-light_brown">
    
-   <div class= "span5 offset1 line_height">
-    <h3>ATHENS </h3><br>
+   <div class= "span10 offset1 line_height">
+    <h3>VIDEO PROCESS </h3><br>
     <p>This place is built on a foundation of rock-star designers.</p>
-      +46 8 52 80 77 70<br>
-      stockholm@greatworks.se<br>
-      Drottninggatan 89<br>
-      113 60 Stockholm<br>
-      SWEDEN
-	<p><a class="btn btn-link" href="#">GO GET YOUR FILL</a></p>
+      </div>
+ <div class="row" id="contact-light_brown">
+  <div class ="span10 offset1" >
+   <iframe width="100%" height="100%" src="http://www.youtube.com/embed/EYgLCNDpgYU" frameborder="0" allowfullscreen></iframe>
+  </div>     
+
    </div>
   
-   <div class="span3 offset2">
-	<span class = "circle_wrap"> 
-	<img src="../img/Boxes/Square.png" alt=""/>
-	</span>
-   </div> 
+
 	
 </div> <!-- End of row -->
 

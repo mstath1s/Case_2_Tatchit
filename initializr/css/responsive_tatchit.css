@@ -2,6 +2,120 @@ body {
  background-color: #b9aca3;
  font-family: 'Bitter', serif;
 }
+/* line 317, ../sass/screen.sass */
+.imageRow {
+  *zoom: 1;
+  margin: 10px 0;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.imageRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 320, ../sass/screen.sass */
+.imageRow .single {
+  float: left;
+}
+/* line 322, ../sass/screen.sass */
+.imageRow .single a {
+  float: left;
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px;
+  line-height: 1em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 40px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 332, ../sass/screen.sass */
+.imageRow .single a img {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* line 335, ../sass/screen.sass */
+.imageRow .single a:hover {
+  background-color: #8ad459;
+}
+/* line 337, ../sass/screen.sass */
+.imageRow .set {
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 343, ../sass/screen.sass */
+.imageRow .set:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+/* line 346, ../sass/screen.sass */
+.imageRow .set .single a {
+  background: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-right: 0;
+}
+/* line 351, ../sass/screen.sass */
+.imageRow .set .single a:hover 2px
+/* line 355, ../sass/screen.sass */
+.imageRow .set .single.first a {
+  -moz-border-radius-topleft: 2px;
+  -webkit-border-top-left-radius: 2px;
+  -ms-border-top-left-radius: 2px;
+  -o-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -ms-border-bottom-left-radius: 2px;
+  -o-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+/* line 358, ../sass/screen.sass */
+.imageRow .set .single.last a {
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -ms-border-top-right-radius: 2px;
+  -o-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  -ms-border-bottom-right-radius: 2px;
+  -o-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
 .navbar{
  margin-bottom: 0px;
 }
@@ -192,7 +306,7 @@ a:hover{
  padding-top: 40px;
  padding-bottom: 80px; 
 }
-.im{
+.text-overlay{
  position: absolute;
  top:235px;
  left:730px;
@@ -237,7 +351,7 @@ h6 {
   margin-left: 30px;
   position:relative;
 }
-.im{
+.text-overlay{
   position: absolute;
   top:3em;
   bottom: 0px;
@@ -281,6 +395,27 @@ h6 {
 }
 /* ------------ End of Who we are page -----------   */
 
+
+
+#two-columns{
+ display: inline;
+margin: 0px;
+margin-right: 5px;
+}
+
+#noble_white{
+ margin: 0px;
+ background-color: white;
+}
+#lightbox_i{
+width:10%;
+margin-bottom: 70px;
+
+
+
+}
+
+
 /*---------------  Blog page ----------------   */
 #blog_textOverlay{
   top:1.4em;
@@ -310,8 +445,8 @@ h6 {
 	 display: inline-block;
      background: white; 
      vertical-align: top;
-     width: 20px;
-	 height: 30px; 
+     width: 3em;
+	 height: 2.4em; 
 	 padding: 10px 13px 20px 13px;
 	 margin-right: 20px;
 	 margin-bottom: 30px;
@@ -461,10 +596,10 @@ margin-left: -30px;
 -webkit-transform:scale(1,1); /* Safari and Chrome */
 -o-transform:scale(1,1); /* Opera */
     
- -webkit-transition: all, 0.2s;
+ -webkit-transition: all, 0.8s;
   -moz-transition: all, 0.2s;
   -o-transition: all, 0.2s;
-  transition: all, 0.2s;
+  transition: all, 0.8s;
      -webkit-border-radius: 100px;
         -moz-border-radius: 100px;
              border-radius: 100px;
@@ -524,7 +659,7 @@ margin-left: -30px;
 	  margin-left:20px;   
 	  position: relative;  
 	}
-	.im{
+	.text-overlay{
 	  position: absolute;
 	  bottom: 100px;
 	  top:2em;
@@ -540,7 +675,6 @@ margin-left: -30px;
 	  left: 100px; 
 	  text-align: right;
 	  font-size: 0.4em;
-	  color:fuchsia;
 	}
 	
 	#got_footer{
@@ -619,7 +753,7 @@ margin-left: -30px;
 	}
 	.hover-background p.Wrap_title, p.Wrap_subtitle{
 	  padding-left: 3.3em;}
-	.im{
+	.text-overlay{
 	  position: absolute;
 	  line-height: 0.75em;
 	  bottom: 40px;
@@ -637,7 +771,6 @@ margin-left: -30px;
 	  right: 0px;
 	  text-align: right;
 	  font-size: 0.4em;
-	    color:cyan;
 	  }
 	#blog_textOverlay{
 	  top:1.0em;
@@ -689,7 +822,7 @@ margin-left: -30px;
 	  margin-left: 0px;  
 	  position: relative; 
 	}
-	.im{
+	.text-overlay{
 	  position: absolute;
 	  line-height: 0.75em; 
 	  top:2em;
@@ -706,7 +839,6 @@ margin-left: -30px;
 	  right: 0px;
 	  text-align: right;
 	  font-size: 0.4em;   
-	  color:green;
 	}
 	#strategy-white img{
 	 margin-left: 80px;
@@ -806,7 +938,7 @@ margin-left: -30px;
 	  margin-left: 0px;  
 	  position: relative;
 	}
-	.im{
+	.text-overlay{
 	  position: absolute;
 	  line-height: 0.75em; 
 	  top:2em;
@@ -916,7 +1048,7 @@ margin-left: -30px;
 	  	margin-left:0px;   
 	    position: relative;  
 	}
-	.im{
+	.text-overlay{
 	  position: absolute;
 	  line-height: 0.75em;
 	  bottom: 40px;
@@ -933,8 +1065,7 @@ margin-left: -30px;
 	  left: 100px;
 	  right: 0px;
 	  text-align: right;
-	  font-size: 0.4em;
-	    color:yellow;  
+	  font-size: 0.4em; 
 	}	  
 	#footer{
 	 margin: 0px;
@@ -979,6 +1110,31 @@ margin-left: -30px;
 	} 
 	#strategy-white img{
 	 margin-left: 90px;
+	}
+	#date-id{
+	 width:50px;
+	}	
+	.date-number{
+		font-size:1.8em;
+		 padding: 0px;
+	
+	}
+	.date-month{
+		padding-right: 0px;
+		line-height: 1em;
+	}
+	.Date{ 
+		 display: inline;
+	     background: white; 
+	     vertical-align: top;
+	     width: 10px;
+		 height: 50px; 
+		 padding: 10px;
+		 margin-right: 0;
+		 margin-bottom: 0px;
+		 text-align: left;
+		 outline: 1px solid #d3cfce;
+		 text-transform: uppercase;
 	}
 }
 
